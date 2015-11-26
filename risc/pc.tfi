@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+pc instance_name (
+    .indata(indata), 
+    .outdata(outdata), 
+    .pc_wrt_s2(pc_wrt_s2), 
+    .rst(rst), 
+    .clk(clk)
+    );
+
+

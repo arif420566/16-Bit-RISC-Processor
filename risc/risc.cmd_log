@@ -1,0 +1,3 @@
+xst -ise "C:/Users/UnNaMeD/Desktop/risc/risc/risc.ise" -intstyle ise -ifn risc.xst -ofn risc.syr
+xst -ise "C:/Users/UnNaMeD/Desktop/risc/risc/risc.ise" -intstyle ise -ifn risc.xst -ofn risc.syr
+xst -ise "C:/Users/UnNaMeD/Desktop/risc/risc/risc.ise" -intstyle ise -ifn risc.xst -ofn risc.syr

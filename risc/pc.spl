@@ -1,0 +1,11 @@
+[Inputs]
+pc_wrt_s2
+rst
+clk
+=indata[15:0]=
+[Outputs]
+=outdata[15:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel pc
+

@@ -1,0 +1,11 @@
+I/O Assignment Analysis Status : Successful - Sun Nov 08 21:36:57 2015
+Quartus II 64-Bit Version : 15.0.2 Build 153 07/15/2015 SJ Web Edition
+Revision Name : risc
+Top-level Entity Name : risc
+Family : Cyclone V
+Device : 5CGXFC7C7F23C8
+Timing Models : Final
+Total pins : 2 / 268 ( < 1 % )
+Total virtual pins : 0
+Total PLLs : 0 / 13 ( 0 % )
+Total DLLs : 0 / 4 ( 0 % )

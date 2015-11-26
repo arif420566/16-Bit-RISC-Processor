@@ -1,0 +1,35 @@
+// memory data file (do not edit the following line - required for mem load use)
+// instance=/RISC_TB/RISC/data_path/memory/mem
+// format=mti addressradix=h dataradix=s version=1.0 wordsperline=1
+ 0: 0000001000010000
+ 1: 0001010000110010
+ 2: 0010011001010100
+ 3: 0011100001110110
+ 4: 0100010110011000
+ 5: 0101101110100000
+ 6: 0110110010110000
+ 7: 0111110111000000
+ 8: 1000110111101101
+ 9: 1001111011010000
+ a: 1010000011111110
+ b: 1011000000001111
+ c: 1100000000010000
+ d: 1101111100100001
+ e: 1110000000110010
+ f: 1111000000010000
+10: xxxxxxxxxxxxxxxx
+11: xxxxxxxxxxxxxxxx
+12: xxxxxxxxxxxxxxxx
+13: xxxxxxxxxxxxxxxx
+14: xxxxxxxxxxxxxxxx
+15: xxxxxxxxxxxxxxxx
+16: xxxxxxxxxxxxxxxx
+17: xxxxxxxxxxxxxxxx
+18: xxxxxxxxxxxxxxxx
+19: xxxxxxxxxxxxxxxx
+1a: xxxxxxxxxxxxxxxx
+1b: xxxxxxxxxxxxxxxx
+1c: xxxxxxxxxxxxxxxx
+1d: xxxxxxxxxxxxxxxx
+1e: xxxxxxxxxxxxxxxx
+1f: xxxxxxxxxxxxxxxx

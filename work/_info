@@ -1,0 +1,392 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/altera/15.0
+valu16b
+Z0 !s110 1447679925
+!i10b 1
+!s100 6MCQJf<CIh9J9W8C0olPj2
+IhUVIj?QlQFMOC;3PDd9Tm2
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+Z2 dC:/Users/UnNaMeD/Desktop/risc
+w1446977055
+8C:/Users/UnNaMeD/Desktop/risc/alu16b.v
+FC:/Users/UnNaMeD/Desktop/risc/alu16b.v
+L0 9
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1447679925.412000
+!s107 C:/Users/UnNaMeD/Desktop/risc/alu16b.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/UnNaMeD/Desktop/risc/alu16b.v|
+!i113 1
+Z4 o-work work
+valuout
+R0
+!i10b 1
+!s100 RFSTaS41SK13<8@0RN22d2
+I5Sz:oOBT<eifY6k4hjnl30
+R1
+R2
+w1446977096
+8C:/Users/UnNaMeD/Desktop/risc/aluout.v
+FC:/Users/UnNaMeD/Desktop/risc/aluout.v
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1447679925.521000
+!s107 C:/Users/UnNaMeD/Desktop/risc/aluout.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/UnNaMeD/Desktop/risc/aluout.v|
+!i113 1
+R4
+vcontrol_unit
+R0
+!i10b 1
+!s100 2UcN0QbZlCMN7QFNNAh[33
+I;ME]b[@_a>QzfYT]k6f`V1
+R1
+R2
+w1446996567
+8C:/Users/UnNaMeD/Desktop/risc/control_unit.v
+FC:/Users/UnNaMeD/Desktop/risc/control_unit.v
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1447679925.677000
+!s107 C:/Users/UnNaMeD/Desktop/risc/control_unit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/UnNaMeD/Desktop/risc/control_unit.v|
+!i113 1
+R4
+vdatapath
+R0
+!i10b 1
+!s100 EnPP=Bo650L<1=jcG:l_B3
+IdRhoIaFV>Pz73F24i=1TV2
+R1
+R2
+w1446974979
+8C:/Users/UnNaMeD/Desktop/risc/datapath.v
+FC:/Users/UnNaMeD/Desktop/risc/datapath.v
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1447679925.771000
+!s107 C:/Users/UnNaMeD/Desktop/risc/datapath.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/UnNaMeD/Desktop/risc/datapath.v|
+!i113 1
+R4
+vinstr_reg
+R0
+!i10b 1
+!s100 mCGFj:m2;ThdX<oPT2Fe60
+IBN@>edC=CcG`zmK9oa`9D0
+R1
+R2
+w1446976942
+8C:/Users/UnNaMeD/Desktop/risc/instr_reg.v
+FC:/Users/UnNaMeD/Desktop/risc/instr_reg.v
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1447679925.864000
+!s107 C:/Users/UnNaMeD/Desktop/risc/instr_reg.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/UnNaMeD/Desktop/risc/instr_reg.v|
+!i113 1
+R4
+vmdr
+R0
+!i10b 1
+!s100 j0T3>e^=kzO9VbCTA68an0
+Ie4zf6U<eeAX9Od9FjE87@3
+R1
+R2
+w1446886328
+8C:/Users/UnNaMeD/Desktop/risc/mdr.v
+FC:/Users/UnNaMeD/Desktop/risc/mdr.v
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1447679925.958000
+!s107 C:/Users/UnNaMeD/Desktop/risc/mdr.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/UnNaMeD/Desktop/risc/mdr.v|
+!i113 1
+R4
+vmux2_to_1
+Z5 !s110 1447679926
+!i10b 1
+!s100 6cH:8M5z`F4i5fbzzScEZ0
+IHSKZY3X_eRmHFa<5>h^AH0
+R1
+R2
+w1446886333
+8C:/Users/UnNaMeD/Desktop/risc/mux2_to_1.v
+FC:/Users/UnNaMeD/Desktop/risc/mux2_to_1.v
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1447679926.036000
+!s107 C:/Users/UnNaMeD/Desktop/risc/mux2_to_1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/UnNaMeD/Desktop/risc/mux2_to_1.v|
+!i113 1
+R4
+vmux4_to_1
+R5
+!i10b 1
+!s100 S<XeSeFA6A1;Hme]Ol[E20
+I:]Ma3i>VXPU<;[9<:^^U]1
+R1
+R2
+w1446886343
+8C:/Users/UnNaMeD/Desktop/risc/mux4_to_1.v
+FC:/Users/UnNaMeD/Desktop/risc/mux4_to_1.v
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1447679926.129000
+!s107 C:/Users/UnNaMeD/Desktop/risc/mux4_to_1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/UnNaMeD/Desktop/risc/mux4_to_1.v|
+!i113 1
+R4
+vmux4b_2_to_1
+R5
+!i10b 1
+!s100 MYH9JL1M<9e]l2^Zg:[;k2
+IdIo_[9oIDz[HkZV;g:?Se1
+R1
+R2
+w1446886307
+8C:/Users/UnNaMeD/Desktop/risc/mux4b_2_to_1.v
+FC:/Users/UnNaMeD/Desktop/risc/mux4b_2_to_1.v
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1447679926.207000
+!s107 C:/Users/UnNaMeD/Desktop/risc/mux4b_2_to_1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/UnNaMeD/Desktop/risc/mux4b_2_to_1.v|
+!i113 1
+R4
+voffset
+R5
+!i10b 1
+!s100 _4Y9LHY1T8_CK>QUE3mUc2
+I@T7Td87o7YK:RR:?7N5Dc3
+R1
+R2
+w1446977156
+8C:/Users/UnNaMeD/Desktop/risc/offset.v
+FC:/Users/UnNaMeD/Desktop/risc/offset.v
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1447679926.301000
+!s107 C:/Users/UnNaMeD/Desktop/risc/offset.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/UnNaMeD/Desktop/risc/offset.v|
+!i113 1
+R4
+vopa
+R5
+!i10b 1
+!s100 nZgjggnLC`@[[>049NgNZ2
+IdTznJ0P=gXFPlRzzN`Wjo1
+R1
+R2
+w1446977229
+8C:/Users/UnNaMeD/Desktop/risc/opa.v
+FC:/Users/UnNaMeD/Desktop/risc/opa.v
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1447679926.379000
+!s107 C:/Users/UnNaMeD/Desktop/risc/opa.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/UnNaMeD/Desktop/risc/opa.v|
+!i113 1
+R4
+vopb
+R5
+!i10b 1
+!s100 elCaE`>1LTg<NNf1aDn:A1
+I6U:gM_=zRb<6g>cCelNR01
+R1
+R2
+w1446977240
+8C:/Users/UnNaMeD/Desktop/risc/opb.v
+FC:/Users/UnNaMeD/Desktop/risc/opb.v
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1447679926.473000
+!s107 C:/Users/UnNaMeD/Desktop/risc/opb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/UnNaMeD/Desktop/risc/opb.v|
+!i113 1
+R4
+vpc
+R5
+!i10b 1
+!s100 =lO=O:VZ_oXM>5mCYnTna2
+I]4XZ3Ob8D8D>ioR<@11ao1
+R1
+R2
+w1446977208
+8C:/Users/UnNaMeD/Desktop/risc/pc.v
+FC:/Users/UnNaMeD/Desktop/risc/pc.v
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1447679926.566000
+!s107 C:/Users/UnNaMeD/Desktop/risc/pc.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/UnNaMeD/Desktop/risc/pc.v|
+!i113 1
+R4
+vram
+R5
+!i10b 1
+!s100 O1g[F]G=iA0_O>oaF>g`:3
+I9Oc6SBH1A^VJ2h12V9MLA3
+R1
+R2
+w1446886314
+8C:/Users/UnNaMeD/Desktop/risc/ram.v
+FC:/Users/UnNaMeD/Desktop/risc/ram.v
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1447679926.660000
+!s107 C:/Users/UnNaMeD/Desktop/risc/ram.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/UnNaMeD/Desktop/risc/ram.v|
+!i113 1
+R4
+vregfile16
+R5
+!i10b 1
+!s100 ZdHA>02HcgM`W1NE12Q0b2
+I4=6g`K_LL[kjSA]9?M;g>0
+R1
+R2
+w1446977377
+8C:/Users/UnNaMeD/Desktop/risc/regfile16.v
+FC:/Users/UnNaMeD/Desktop/risc/regfile16.v
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1447679926.753000
+!s107 C:/Users/UnNaMeD/Desktop/risc/regfile16.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/UnNaMeD/Desktop/risc/regfile16.v|
+!i113 1
+R4
+vrisc
+R5
+!i10b 1
+!s100 k@Ta4?o?kHWVQ=6GO@T_=3
+IBmh`]SIh3^lZ<KRn<R8i52
+R1
+R2
+w1446971937
+8C:/Users/UnNaMeD/Desktop/risc/risc.v
+FC:/Users/UnNaMeD/Desktop/risc/risc.v
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1447679926.831000
+!s107 C:/Users/UnNaMeD/Desktop/risc/risc.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/UnNaMeD/Desktop/risc/risc.v|
+!i113 1
+R4
+vRISC_TB
+R5
+!i10b 1
+!s100 ]EHbSWB^R;2XY23a<f9`H3
+IX^o=_E=Z[Zb7M4@aGjiL:0
+R1
+R2
+w1446974415
+8C:/Users/UnNaMeD/Desktop/risc/RISC_TB.v
+FC:/Users/UnNaMeD/Desktop/risc/RISC_TB.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1447679926.925000
+!s107 C:/Users/UnNaMeD/Desktop/risc/RISC_TB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/UnNaMeD/Desktop/risc/RISC_TB.v|
+!i113 1
+R4
+n@r@i@s@c_@t@b
+vRISC_TEST_BENCH
+!s110 1446648946
+!i10b 1
+!s100 LlY2IULoLN2gD>KCgJlR>2
+IScb`VVI8=[B]ZZBWKVR`g1
+R1
+dD:/Studies/VLSI/ModelSim/risc
+w1446648935
+8D:/Studies/VLSI/ModelSim/risc/RISC_TEST_BENCH.v
+FD:/Studies/VLSI/ModelSim/risc/RISC_TEST_BENCH.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1446648946.787000
+!s107 D:/Studies/VLSI/ModelSim/risc/RISC_TEST_BENCH.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Studies/VLSI/ModelSim/risc/RISC_TEST_BENCH.v|
+!i113 1
+R4
+n@r@i@s@c_@t@e@s@t_@b@e@n@c@h
+vsignextender
+!s110 1447679927
+!i10b 1
+!s100 1KUg^IHg=g@a[G91n1mAo3
+IB_3=T1=P[7TKBal_35X:71
+R1
+R2
+w1446886272
+8C:/Users/UnNaMeD/Desktop/risc/signextender.v
+FC:/Users/UnNaMeD/Desktop/risc/signextender.v
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1447679927.019000
+!s107 C:/Users/UnNaMeD/Desktop/risc/signextender.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/UnNaMeD/Desktop/risc/signextender.v|
+!i113 1
+R4

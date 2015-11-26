@@ -1,0 +1,617 @@
+Release 9.2i - xst J.36
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.02 / 0.14 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.14 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: risc.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "risc.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "risc"
+Output Format                      : NGC
+Target Device                      : Automotive 9500XL
+
+---- Source Options
+Top Module Name                    : risc
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : risc.lso
+Keep Hierarchy                     : YES
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "signextender.v" in library work
+Compiling verilog file "regfile16.v" in library work
+Module <signextender> compiled
+Compiling verilog file "ram.v" in library work
+Module <regfile16> compiled
+Compiling verilog file "pc.v" in library work
+Module <ram> compiled
+Compiling verilog file "opb.v" in library work
+Module <pc> compiled
+Compiling verilog file "opa.v" in library work
+Module <opb> compiled
+Compiling verilog file "offset.v" in library work
+Module <opa> compiled
+Compiling verilog file "mux4b_2_to_1.v" in library work
+Module <offset> compiled
+Compiling verilog file "mux4_to_1.v" in library work
+Module <mux4b_2_to_1> compiled
+Compiling verilog file "mux2_to_1.v" in library work
+Module <mux4_to_1> compiled
+Compiling verilog file "mdr.v" in library work
+Module <mux2_to_1> compiled
+Compiling verilog file "instr_reg.v" in library work
+Module <mdr> compiled
+Compiling verilog file "aluout.v" in library work
+Module <instr_reg> compiled
+Compiling verilog file "alu16b.v" in library work
+Module <aluout> compiled
+Compiling verilog file "datapath.v" in library work
+Module <alu16b> compiled
+Compiling verilog file "control_unit.v" in library work
+Module <datapath> compiled
+Compiling verilog file "risc.v" in library work
+Module <control_unit> compiled
+Module <risc> compiled
+No errors in compilation
+Analysis of file <"risc.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <risc> in library <work>.
+
+Analyzing hierarchy for module <control_unit> in library <work> with parameters.
+	EXECUTE_part_1 = "010"
+	EXECUTE_part_2 = "011"
+	FETCH_part_1 = "000"
+	FETCH_part_2 = "001"
+	IDLE = "100"
+
+Analyzing hierarchy for module <datapath> in library <work>.
+
+Analyzing hierarchy for module <pc> in library <work>.
+
+Analyzing hierarchy for module <mux2_to_1> in library <work>.
+
+Analyzing hierarchy for module <ram> in library <work>.
+
+Analyzing hierarchy for module <instr_reg> in library <work>.
+
+Analyzing hierarchy for module <mux4b_2_to_1> in library <work>.
+
+Analyzing hierarchy for module <regfile16> in library <work>.
+
+Analyzing hierarchy for module <signextender> in library <work>.
+
+Analyzing hierarchy for module <mdr> in library <work>.
+
+Analyzing hierarchy for module <mux4_to_1> in library <work>.
+
+Analyzing hierarchy for module <opa> in library <work>.
+
+Analyzing hierarchy for module <opb> in library <work>.
+
+Analyzing hierarchy for module <offset> in library <work>.
+
+Analyzing hierarchy for module <alu16b> in library <work>.
+
+Analyzing hierarchy for module <aluout> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <risc>.
+Module <risc> is correct for synthesis.
+ 
+Analyzing module <control_unit> in library <work>.
+	EXECUTE_part_1 = 3'b010
+	EXECUTE_part_2 = 3'b011
+	FETCH_part_1 = 3'b000
+	FETCH_part_2 = 3'b001
+	IDLE = 3'b100
+"control_unit.v" line 77: $display : 
+CPU is in IDLE state
+"control_unit.v" line 103: $display : 
+CPU is in FETCH_part_1 state
+"control_unit.v" line 129: $display : 
+CPU is in FETCH_part_2 state
+"control_unit.v" line 272: $display : 
+CPU is in EXECUTE_part_1 state
+"control_unit.v" line 414: $display : 
+CPU is in EXECUTE_part_2 state
+WARNING:Xst:905 - "control_unit.v" line 73: The signals <opcode, alu_task, zero> are missing in the sensitivity list of always block.
+Module <control_unit> is correct for synthesis.
+ 
+Analyzing module <datapath> in library <work>.
+Module <datapath> is correct for synthesis.
+ 
+Analyzing module <pc> in library <work>.
+WARNING:Xst:2321 - "pc.v" line 21: Parameter 1 ($time) is not supported in call of system task $display.
+"pc.v" line 21: $display : 	At this posedge contents of pc are 0000h
+WARNING:Xst:2321 - "pc.v" line 28: Parameter 1 ($time) is not supported in call of system task $display.
+WARNING:Xst:2323 - "pc.v" line 28: Parameter 3 is not constant in call of system task $display.
+"pc.v" line 28: $display : 	At this posedge contents of pc are %hh
+Module <pc> is correct for synthesis.
+ 
+Analyzing module <mux2_to_1> in library <work>.
+Module <mux2_to_1> is correct for synthesis.
+ 
+Analyzing module <ram> in library <work>.
+WARNING:Xst:905 - "ram.v" line 40: The signals <mem> are missing in the sensitivity list of always block.
+Module <ram> is correct for synthesis.
+ 
+Analyzing module <instr_reg> in library <work>.
+WARNING:Xst:2321 - "instr_reg.v" line 20: Parameter 1 ($time) is not supported in call of system task $display.
+WARNING:Xst:2323 - "instr_reg.v" line 20: Parameter 3 is not constant in call of system task $display.
+"instr_reg.v" line 20: $display : 	At this posedge Instruction register=memory[pc]=%hh
+Module <instr_reg> is correct for synthesis.
+ 
+Analyzing module <mux4b_2_to_1> in library <work>.
+Module <mux4b_2_to_1> is correct for synthesis.
+ 
+Analyzing module <regfile16> in library <work>.
+WARNING:Xst:2323 - "regfile16.v" line 30: Parameter 2 is not constant in call of system task $display.
+WARNING:Xst:2323 - "regfile16.v" line 30: Parameter 3 is not constant in call of system task $display.
+"regfile16.v" line 30: $display : At this posedge Register %d of Regfile is written %h
+WARNING:Xst:905 - "regfile16.v" line 35: The signals <Register> are missing in the sensitivity list of always block.
+Module <regfile16> is correct for synthesis.
+ 
+Analyzing module <signextender> in library <work>.
+WARNING:Xst:905 - "signextender.v" line 22: The signals <B, A> are missing in the sensitivity list of always block.
+Module <signextender> is correct for synthesis.
+ 
+Analyzing module <mdr> in library <work>.
+Module <mdr> is correct for synthesis.
+ 
+Analyzing module <mux4_to_1> in library <work>.
+Module <mux4_to_1> is correct for synthesis.
+ 
+Analyzing module <opa> in library <work>.
+WARNING:Xst:2321 - "opa.v" line 19: Parameter 1 ($time) is not supported in call of system task $display.
+WARNING:Xst:2323 - "opa.v" line 19: Parameter 3 is not constant in call of system task $display.
+"opa.v" line 19: $display : 	At this posedge register A=%h
+Module <opa> is correct for synthesis.
+ 
+Analyzing module <opb> in library <work>.
+WARNING:Xst:2321 - "opb.v" line 19: Parameter 1 ($time) is not supported in call of system task $display.
+WARNING:Xst:2323 - "opb.v" line 19: Parameter 3 is not constant in call of system task $display.
+"opb.v" line 19: $display : 	At this posedge register B=%hh
+Module <opb> is correct for synthesis.
+ 
+Analyzing module <offset> in library <work>.
+WARNING:Xst:2321 - "offset.v" line 19: Parameter 1 ($time) is not supported in call of system task $display.
+WARNING:Xst:2323 - "offset.v" line 19: Parameter 3 is not constant in call of system task $display.
+"offset.v" line 19: $display : 	At this posedge register OFFSET=%hh
+Module <offset> is correct for synthesis.
+ 
+Analyzing module <alu16b> in library <work>.
+Module <alu16b> is correct for synthesis.
+ 
+Analyzing module <aluout> in library <work>.
+WARNING:Xst:2321 - "aluout.v" line 19: Parameter 1 ($time) is not supported in call of system task $display.
+WARNING:Xst:2323 - "aluout.v" line 19: Parameter 3 is not constant in call of system task $display.
+"aluout.v" line 19: $display : 	At this posedge of clock register alu_rslt is %hh
+Module <aluout> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <control_unit>.
+    Related source file is "control_unit.v".
+WARNING:Xst:647 - Input <carry> is never used.
+    Found finite state machine <FSM_0> for signal <pstate>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 100                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | automatic                                      |
+    -----------------------------------------------------------------------
+WARNING:Xst:737 - Found 1-bit latch for signal <EXECUTE_part_2_done>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <EXECUTE_part_1_done>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <FETCH_part_2_done>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <FETCH_part_1_done>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 3-bit latch for signal <alu_sel>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 2-bit latch for signal <opb_sel>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 2-bit latch for signal <data_sel>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <we>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <re>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <opa_sel>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg_wrt>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <rega_sel>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <ir_wrt>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <addr_sel>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <pc_wrt>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <pc_rst>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:736 - Found 3-bit latch for signal <alu_sel$mux0000> created at line 273.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:736 - Found 2-bit latch for signal <opb_sel$mux0000> created at line 273.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:736 - Found 1-bit latch for signal <we$mux0000> created at line 415.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:736 - Found 1-bit latch for signal <re$mux0000> created at line 415.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:736 - Found 1-bit latch for signal <opa_sel$mux0000> created at line 273.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:736 - Found 1-bit latch for signal <rega_sel$mux0000> created at line 273.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:736 - Found 1-bit latch for signal <ir_wrt$mux0000> created at line 273.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:736 - Found 1-bit latch for signal <addr_sel$mux0000> created at line 273.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:736 - Found 1-bit latch for signal <pc_rst$mux0000> created at line 273.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <control_unit> synthesized.
+
+
+Synthesizing Unit <pc>.
+    Related source file is "pc.v".
+    Found 16-bit register for signal <outdata>.
+Unit <pc> synthesized.
+
+
+Synthesizing Unit <mux2_to_1>.
+    Related source file is "mux2_to_1.v".
+Unit <mux2_to_1> synthesized.
+
+
+Synthesizing Unit <ram>.
+    Related source file is "ram.v".
+WARNING:Xst:647 - Input <address<15:5>> is never used.
+WARNING:Xst:737 - Found 16-bit latch for signal <data>.
+    Found 16-bit tristate buffer for signal <data_out>.
+    Found 512-bit register for signal <mem>.
+    Summary:
+	inferred  16 Tristate(s).
+Unit <ram> synthesized.
+
+
+Synthesizing Unit <instr_reg>.
+    Related source file is "instr_reg.v".
+    Found 4-bit register for signal <instr11_8>.
+    Found 4-bit register for signal <instr7_4>.
+    Found 4-bit register for signal <instr15_12>.
+    Found 4-bit register for signal <instr3_0>.
+Unit <instr_reg> synthesized.
+
+
+Synthesizing Unit <mux4b_2_to_1>.
+    Related source file is "mux4b_2_to_1.v".
+Unit <mux4b_2_to_1> synthesized.
+
+
+Synthesizing Unit <regfile16>.
+    Related source file is "regfile16.v".
+    Found 256-bit register for signal <Register>.
+Unit <regfile16> synthesized.
+
+
+Synthesizing Unit <signextender>.
+    Related source file is "signextender.v".
+Unit <signextender> synthesized.
+
+
+Synthesizing Unit <mdr>.
+    Related source file is "mdr.v".
+    Found 16-bit register for signal <memdataout>.
+Unit <mdr> synthesized.
+
+
+Synthesizing Unit <mux4_to_1>.
+    Related source file is "mux4_to_1.v".
+    Found 16-bit 4-to-1 multiplexer for signal <out>.
+Unit <mux4_to_1> synthesized.
+
+
+Synthesizing Unit <opa>.
+    Related source file is "opa.v".
+    Found 16-bit register for signal <dataout>.
+Unit <opa> synthesized.
+
+
+Synthesizing Unit <opb>.
+    Related source file is "opb.v".
+    Found 16-bit register for signal <dataout>.
+Unit <opb> synthesized.
+
+
+Synthesizing Unit <offset>.
+    Related source file is "offset.v".
+    Found 16-bit register for signal <dataout>.
+Unit <offset> synthesized.
+
+
+Synthesizing Unit <alu16b>.
+    Related source file is "alu16b.v".
+WARNING:Xst:646 - Signal <temp> is assigned but never used.
+WARNING:Xst:2734 - Property "use_dsp48" is not applicable for this technology.
+WARNING:Xst:2734 - Property "use_dsp48" is not applicable for this technology.
+    Found 16-bit 8-to-1 multiplexer for signal <ALUOUT>.
+    Found 16-bit xor2 for signal <ALUOUT$xor0000> created at line 49.
+    Found 16-bit adder carry out for signal <AUX_4$addsub0000>.
+    Found 1-bit xor2 for signal <carry$xor0000> created at line 37.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Xor(s).
+Unit <alu16b> synthesized.
+
+
+Synthesizing Unit <aluout>.
+    Related source file is "aluout.v".
+    Found 16-bit register for signal <dataout>.
+Unit <aluout> synthesized.
+
+
+Synthesizing Unit <datapath>.
+    Related source file is "datapath.v".
+WARNING:Xst:1780 - Signal <pcin> is never used or assigned.
+Unit <datapath> synthesized.
+
+
+Synthesizing Unit <risc>.
+    Related source file is "risc.v".
+Unit <risc> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 16-bit adder carry out                                : 1
+ 17-bit subtractor                                     : 1
+# Registers                                            : 58
+ 16-bit register                                       : 54
+ 4-bit register                                        : 4
+# Latches                                              : 22
+ 1-bit latch                                           : 16
+ 16-bit latch                                          : 1
+ 2-bit latch                                           : 3
+ 3-bit latch                                           : 2
+# Multiplexers                                         : 6
+ 16-bit 16-to-1 multiplexer                            : 2
+ 16-bit 32-to-1 multiplexer                            : 1
+ 16-bit 4-to-1 multiplexer                             : 2
+ 16-bit 8-to-1 multiplexer                             : 1
+# Tristates                                            : 1
+ 16-bit tristate buffer                                : 1
+# Xors                                                 : 2
+ 1-bit xor2                                            : 1
+ 16-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <FSM_0> on signal <pstate[1:3]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 100   | 000
+ 000   | 001
+ 001   | 010
+ 010   | 011
+ 011   | 100
+-------------------
+WARNING:Xst:1290 - Hierarchical block <control_path> is unconnected in block <risc>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <data_path> is unconnected in block <risc>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Adders/Subtractors                                   : 2
+ 16-bit adder carry out                                : 1
+ 17-bit subtractor                                     : 1
+# Registers                                            : 883
+ Flip-Flops                                            : 883
+# Latches                                              : 22
+ 1-bit latch                                           : 16
+ 16-bit latch                                          : 1
+ 2-bit latch                                           : 3
+ 3-bit latch                                           : 2
+# Multiplexers                                         : 6
+ 16-bit 16-to-1 multiplexer                            : 2
+ 16-bit 32-to-1 multiplexer                            : 1
+ 16-bit 4-to-1 multiplexer                             : 2
+ 16-bit 8-to-1 multiplexer                             : 1
+# Xors                                                 : 1
+ 16-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1355 - Unit signextender is merged (low complexity)
+WARNING:Xst:1710 - FF/Latch  <ir_wrt_mux0000> (without init value) has a constant value of 0 in block <control_unit>.
+
+Optimizing unit <risc> ...
+
+Optimizing unit <mux2_to_1> ...
+
+Optimizing unit <mux4b_2_to_1> ...
+
+Optimizing unit <control_unit> ...
+WARNING:Xst:1294 - Latch <addr_sel_mux0000> is equivalent to a wire in block <control_unit>.
+WARNING:Xst:1294 - Latch <rega_sel_mux0000> is equivalent to a wire in block <control_unit>.
+WARNING:Xst:1294 - Latch <opa_sel_mux0000> is equivalent to a wire in block <control_unit>.
+WARNING:Xst:1294 - Latch <re_mux0000> is equivalent to a wire in block <control_unit>.
+WARNING:Xst:1294 - Latch <we_mux0000> is equivalent to a wire in block <control_unit>.
+WARNING:Xst:1294 - Latch <pc_rst> is equivalent to a wire in block <control_unit>.
+WARNING:Xst:1294 - Latch <pc_wrt> is equivalent to a wire in block <control_unit>.
+WARNING:Xst:1294 - Latch <addr_sel> is equivalent to a wire in block <control_unit>.
+WARNING:Xst:1294 - Latch <ir_wrt> is equivalent to a wire in block <control_unit>.
+WARNING:Xst:1294 - Latch <rega_sel> is equivalent to a wire in block <control_unit>.
+WARNING:Xst:1294 - Latch <reg_wrt> is equivalent to a wire in block <control_unit>.
+WARNING:Xst:1294 - Latch <opa_sel> is equivalent to a wire in block <control_unit>.
+WARNING:Xst:1294 - Latch <re> is equivalent to a wire in block <control_unit>.
+WARNING:Xst:1294 - Latch <we> is equivalent to a wire in block <control_unit>.
+WARNING:Xst:1294 - Latch <opb_sel_mux0000_0> is equivalent to a wire in block <control_unit>.
+WARNING:Xst:1294 - Latch <opb_sel_mux0000_1> is equivalent to a wire in block <control_unit>.
+WARNING:Xst:1294 - Latch <data_sel_0> is equivalent to a wire in block <control_unit>.
+WARNING:Xst:1294 - Latch <data_sel_1> is equivalent to a wire in block <control_unit>.
+WARNING:Xst:1294 - Latch <opb_sel_0> is equivalent to a wire in block <control_unit>.
+WARNING:Xst:1294 - Latch <opb_sel_1> is equivalent to a wire in block <control_unit>.
+WARNING:Xst:1294 - Latch <alu_sel_mux0000_0> is equivalent to a wire in block <control_unit>.
+WARNING:Xst:1294 - Latch <alu_sel_mux0000_1> is equivalent to a wire in block <control_unit>.
+WARNING:Xst:1294 - Latch <alu_sel_mux0000_2> is equivalent to a wire in block <control_unit>.
+WARNING:Xst:1294 - Latch <alu_sel_0> is equivalent to a wire in block <control_unit>.
+WARNING:Xst:1294 - Latch <alu_sel_1> is equivalent to a wire in block <control_unit>.
+WARNING:Xst:1294 - Latch <alu_sel_2> is equivalent to a wire in block <control_unit>.
+
+Optimizing unit <pc> ...
+
+Optimizing unit <ram> ...
+
+Optimizing unit <instr_reg> ...
+
+Optimizing unit <regfile16> ...
+
+Optimizing unit <mdr> ...
+
+Optimizing unit <mux4_to_1> ...
+
+Optimizing unit <opa> ...
+
+Optimizing unit <opb> ...
+
+Optimizing unit <offset> ...
+
+Optimizing unit <aluout> ...
+
+Optimizing unit <alu16b> ...
+
+Optimizing unit <datapath> ...
+WARNING:Xst:1290 - Hierarchical block <control_path> is unconnected in block <risc>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <data_path> is unconnected in block <risc>.
+   It will be removed from the design.
+
+=========================================================================
+*                          Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : risc.ngr
+Top Level Output File Name         : risc
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : YES
+Target Technology                  : Automotive 9500XL
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 2
+
+Cell Usage :
+=========================================================================
+CPU : 8.72 / 8.88 s | Elapsed : 9.00 / 9.00 s
+ 
+--> 
+
+Total memory usage is 193668 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   83 (   0 filtered)
+Number of infos    :   25 (   0 filtered)
+

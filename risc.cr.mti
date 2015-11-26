@@ -1,0 +1,127 @@
+C:/Users/UnNaMeD/Desktop/risc/datapath.v {1 {vlog -work work -stats=none C:/Users/UnNaMeD/Desktop/risc/datapath.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module datapath
+
+Top level modules:
+	datapath
+
+} {} {}} C:/Users/UnNaMeD/Desktop/risc/offset.v {1 {vlog -work work -stats=none C:/Users/UnNaMeD/Desktop/risc/offset.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module offset
+
+Top level modules:
+	offset
+
+} {} {}} C:/Users/UnNaMeD/Desktop/risc/control_unit.v {1 {vlog -work work -stats=none C:/Users/UnNaMeD/Desktop/risc/control_unit.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module control_unit
+
+Top level modules:
+	control_unit
+
+} {} {}} C:/Users/UnNaMeD/Desktop/risc/mux4_to_1.v {1 {vlog -work work -stats=none C:/Users/UnNaMeD/Desktop/risc/mux4_to_1.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module mux4_to_1
+
+Top level modules:
+	mux4_to_1
+
+} {} {}} C:/Users/UnNaMeD/Desktop/risc/opa.v {1 {vlog -work work -stats=none C:/Users/UnNaMeD/Desktop/risc/opa.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module opa
+
+Top level modules:
+	opa
+
+} {} {}} C:/Users/UnNaMeD/Desktop/risc/risc.v {1 {vlog -work work -stats=none C:/Users/UnNaMeD/Desktop/risc/risc.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module risc
+
+Top level modules:
+	risc
+
+} {} {}} C:/Users/UnNaMeD/Desktop/risc/opb.v {1 {vlog -work work -stats=none C:/Users/UnNaMeD/Desktop/risc/opb.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module opb
+
+Top level modules:
+	opb
+
+} {} {}} C:/Users/UnNaMeD/Desktop/risc/alu16b.v {1 {vlog -work work -stats=none C:/Users/UnNaMeD/Desktop/risc/alu16b.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module alu16b
+
+Top level modules:
+	alu16b
+
+} {} {}} C:/Users/UnNaMeD/Desktop/risc/mdr.v {1 {vlog -work work -stats=none C:/Users/UnNaMeD/Desktop/risc/mdr.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module mdr
+
+Top level modules:
+	mdr
+
+} {} {}} C:/Users/UnNaMeD/Desktop/risc/regfile16.v {1 {vlog -work work -stats=none C:/Users/UnNaMeD/Desktop/risc/regfile16.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module regfile16
+
+Top level modules:
+	regfile16
+
+} {} {}} C:/Users/UnNaMeD/Desktop/risc/RISC_TB.v {1 {vlog -work work -stats=none C:/Users/UnNaMeD/Desktop/risc/RISC_TB.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module RISC_TB
+
+Top level modules:
+	RISC_TB
+
+} {} {}} C:/Users/UnNaMeD/Desktop/risc/ram.v {1 {vlog -work work -stats=none C:/Users/UnNaMeD/Desktop/risc/ram.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module ram
+
+Top level modules:
+	ram
+
+} {} {}} C:/Users/UnNaMeD/Desktop/risc/signextender.v {1 {vlog -work work -stats=none C:/Users/UnNaMeD/Desktop/risc/signextender.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module signextender
+
+Top level modules:
+	signextender
+
+} {} {}} C:/Users/UnNaMeD/Desktop/risc/aluout.v {1 {vlog -work work -stats=none C:/Users/UnNaMeD/Desktop/risc/aluout.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module aluout
+
+Top level modules:
+	aluout
+
+} {} {}} C:/Users/UnNaMeD/Desktop/risc/mux4b_2_to_1.v {1 {vlog -work work -stats=none C:/Users/UnNaMeD/Desktop/risc/mux4b_2_to_1.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module mux4b_2_to_1
+
+Top level modules:
+	mux4b_2_to_1
+
+} {} {}} C:/Users/UnNaMeD/Desktop/risc/pc.v {1 {vlog -work work -stats=none C:/Users/UnNaMeD/Desktop/risc/pc.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module pc
+
+Top level modules:
+	pc
+
+} {} {}} C:/Users/UnNaMeD/Desktop/risc/instr_reg.v {1 {vlog -work work -stats=none C:/Users/UnNaMeD/Desktop/risc/instr_reg.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module instr_reg
+
+Top level modules:
+	instr_reg
+
+} {} {}} C:/Users/UnNaMeD/Desktop/risc/mux2_to_1.v {1 {vlog -work work -stats=none C:/Users/UnNaMeD/Desktop/risc/mux2_to_1.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+-- Compiling module mux2_to_1
+
+Top level modules:
+	mux2_to_1
+
+} {} {}}

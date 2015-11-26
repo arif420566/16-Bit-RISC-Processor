@@ -1,0 +1,12 @@
+module aluout(datain,dataout,clk);
+input [15:0] datain;
+input clk;
+80
+output [15:0] dataout;
+reg [15:0] dataout;
+always @ (posedge clk)
+begin
+dataout=datain;
+$display("At this posedge of clock register aluout is %h",dataout);
+end
+endmodule
